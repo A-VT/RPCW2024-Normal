@@ -12,35 +12,40 @@
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/avt/ontologies/historia#casado_com
+###  http://www.semanticweb.org/avt/ontologies/historia/casado_com
 :casado_com rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :familia_de .
 
 
-###  http://www.semanticweb.org/avt/ontologies/historia#dono_de
+###  http://www.semanticweb.org/avt/ontologies/historia/dono_de
 :dono_de rdf:type owl:ObjectProperty ;
+         owl:inverseOf :pertence_a ;
          rdfs:domain :Pessoa ;
-         rdfs:range :AnimalEstimacao ,
+         rdfs:range :Agricultura ,
+                    :AnimalEstimacao ,
+                    :Gado ,
                     :Material .
 
 
-###  http://www.semanticweb.org/avt/ontologies/historia#familia_de
+###  http://www.semanticweb.org/avt/ontologies/historia/familia_de
 :familia_de rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/avt/ontologies/historia#filho_de
+###  http://www.semanticweb.org/avt/ontologies/historia/filho_de
 :filho_de rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :familia_de .
 
 
-###  http://www.semanticweb.org/avt/ontologies/historia#pertence_a
+###  http://www.semanticweb.org/avt/ontologies/historia/pertence_a
 :pertence_a rdf:type owl:ObjectProperty ;
-            rdfs:domain :AnimalEstimacao ,
+            rdfs:domain :Agricultura ,
+                        :AnimalEstimacao ,
+                        :Gado ,
                         :Material ;
             rdfs:range :Pessoa .
 
 
-###  http://www.semanticweb.org/avt/ontologies/historia#trabalha
+###  http://www.semanticweb.org/avt/ontologies/historia/trabalha
 :trabalha rdf:type owl:ObjectProperty ;
           rdfs:domain :Pessoa ;
           rdfs:range :Agricultura ,
@@ -49,12 +54,12 @@
                      :Rendimento .
 
 
-###  http://www.semanticweb.org/avt/ontologies/historia#trabalha_temporariamente
+###  http://www.semanticweb.org/avt/ontologies/historia/trabalha_temporariamente
 :trabalha_temporariamente rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf :trabalha .
 
 
-###  http://www.semanticweb.org/avt/ontologies/historia#vende_em
+###  http://www.semanticweb.org/avt/ontologies/historia/vende_em
 :vende_em rdf:type owl:ObjectProperty ;
           rdfs:domain :Pessoa ;
           rdfs:range :Venda .
@@ -64,12 +69,12 @@
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/avt/ontologies/historia#dias_abertos
+###  http://www.semanticweb.org/avt/ontologies/historia/dias_abertos
 :dias_abertos rdf:type owl:DatatypeProperty ;
               rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/avt/ontologies/historia#especie
+###  http://www.semanticweb.org/avt/ontologies/historia/especie
 :especie rdf:type owl:DatatypeProperty ;
          rdfs:domain :AnimalEstimacao ,
                      :Fruta ,
@@ -78,11 +83,11 @@
          rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/avt/ontologies/historia#horas_servico
+###  http://www.semanticweb.org/avt/ontologies/historia/horas_servico
 :horas_servico rdf:type owl:DatatypeProperty .
 
 
-###  http://www.semanticweb.org/avt/ontologies/historia#nome
+###  http://www.semanticweb.org/avt/ontologies/historia/nome
 :nome rdf:type owl:DatatypeProperty ;
       rdfs:domain :AnimalEstimacao ,
                   :Pessoa ,
@@ -94,48 +99,48 @@
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/avt/ontologies/historia#Agricultura
+###  http://www.semanticweb.org/avt/ontologies/historia/Agricultura
 :Agricultura rdf:type owl:Class ;
              rdfs:subClassOf :Rendimento .
 
 
-###  http://www.semanticweb.org/avt/ontologies/historia#AnimalEstimacao
+###  http://www.semanticweb.org/avt/ontologies/historia/AnimalEstimacao
 :AnimalEstimacao rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/avt/ontologies/historia#Fruta
+###  http://www.semanticweb.org/avt/ontologies/historia/Fruta
 :Fruta rdf:type owl:Class ;
        rdfs:subClassOf :Agricultura .
 
 
-###  http://www.semanticweb.org/avt/ontologies/historia#Gado
+###  http://www.semanticweb.org/avt/ontologies/historia/Gado
 :Gado rdf:type owl:Class ;
       rdfs:subClassOf :Rendimento .
 
 
-###  http://www.semanticweb.org/avt/ontologies/historia#Material
+###  http://www.semanticweb.org/avt/ontologies/historia/Material
 :Material rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/avt/ontologies/historia#Pessoa
+###  http://www.semanticweb.org/avt/ontologies/historia/Pessoa
 :Pessoa rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/avt/ontologies/historia#ProdutosTransformados
+###  http://www.semanticweb.org/avt/ontologies/historia/ProdutosTransformados
 :ProdutosTransformados rdf:type owl:Class ;
                        rdfs:subClassOf :Rendimento .
 
 
-###  http://www.semanticweb.org/avt/ontologies/historia#Rendimento
+###  http://www.semanticweb.org/avt/ontologies/historia/Rendimento
 :Rendimento rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/avt/ontologies/historia#Vegetal
+###  http://www.semanticweb.org/avt/ontologies/historia/Vegetal
 :Vegetal rdf:type owl:Class ;
          rdfs:subClassOf :Agricultura .
 
 
-###  http://www.semanticweb.org/avt/ontologies/historia#Venda
+###  http://www.semanticweb.org/avt/ontologies/historia/Venda
 :Venda rdf:type owl:Class .
 
 
@@ -143,20 +148,49 @@
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/avt/ontologies/historia#FeiraSJose
+###  http://www.semanticweb.org/avt/ontologies/historia#campoBananas
+:campoBananas rdf:type owl:NamedIndividual ,
+                       :Agricultura ;
+              :pertence_a :Sr.Joao ;
+              :especie "banana" .
+
+
+###  http://www.semanticweb.org/avt/ontologies/historia#campoLaranjas
+:campoLaranjas rdf:type owl:NamedIndividual ,
+                        :Agricultura ;
+               :pertence_a :Sr.Joao ;
+               :especie "laranja" .
+
+
+###  http://www.semanticweb.org/avt/ontologies/historia#galinhasSJoao
+:galinhasSJoao rdf:type owl:NamedIndividual ,
+                        :Gado .
+
+
+###  http://www.semanticweb.org/avt/ontologies/historia#porcosSJoao
+:porcosSJoao rdf:type owl:NamedIndividual ,
+                      :Gado .
+
+
+###  http://www.semanticweb.org/avt/ontologies/historia#vacasSJoao
+:vacasSJoao rdf:type owl:NamedIndividual ,
+                     :Gado .
+
+
+###  http://www.semanticweb.org/avt/ontologies/historia/FeiraSJose
 :FeiraSJose rdf:type owl:NamedIndividual ,
                      :Venda ;
             :dias_abertos "todos os sábados" ;
             :nome "Feira S. José" .
 
 
-###  http://www.semanticweb.org/avt/ontologies/historia#Rex
+###  http://www.semanticweb.org/avt/ontologies/historia/Rex
 :Rex rdf:type owl:NamedIndividual ,
               :AnimalEstimacao ;
      :nome "Rex" .
 
 
-###  http://www.semanticweb.org/avt/ontologies/historia#Sr.Joao
+###  http://www.semanticweb.org/avt/ontologies/historia/Sr.Joao
 :Sr.Joao rdf:type owl:NamedIndividual ,
                   :Pessoa ;
          :dono_de :Rex ,
@@ -164,14 +198,14 @@
          :nome "Sr. Joao" .
 
 
-###  http://www.semanticweb.org/avt/ontologies/historia#campoMacas
+###  http://www.semanticweb.org/avt/ontologies/historia/campoMacas
 :campoMacas rdf:type owl:NamedIndividual ,
                      :Agricultura ;
             :pertence_a :Sr.Joao ;
             :especie "macas" .
 
 
-###  http://www.semanticweb.org/avt/ontologies/historia#tratorS.Joao
+###  http://www.semanticweb.org/avt/ontologies/historia/tratorS.Joao
 :tratorS.Joao rdf:type owl:NamedIndividual ,
                        :Material ;
               :pertence_a :Sr.Joao .
