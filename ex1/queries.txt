@@ -1,0 +1,17 @@
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX : <http://www.semanticweb.org/avt/ontologies/historia/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+select * where {
+    ?s a owl:Class.
+}
+
+select (COUNT(?s) AS ?classCount) where {
+    ?s rdf:type owl:ObjectProperty.
+}
+
+select (COUNT(?s) AS ?classCount) where {
+    ?s a owl:NamedIndividual.
+}
