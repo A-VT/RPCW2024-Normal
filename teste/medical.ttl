@@ -2,6 +2,8 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
+: a :Symptom .
+
 <http://www.example.org/disease-ontology#(vertigo)_Paroymsal__Positional_Vertigo> a :Disease .
 
 :AIDS a :Disease .
@@ -112,6 +114,266 @@
 
 :Varicose_veins a :Disease .
 
+:_abdominal_pain a :Symptom .
+
+:_abnormal_menstruation a :Symptom .
+
+:_acidity a :Symptom .
+
+:_acute_liver_failure a :Symptom .
+
+:_altered_sensorium a :Symptom .
+
+:_anxiety a :Symptom .
+
+:_back_pain a :Symptom .
+
+:_belly_pain a :Symptom .
+
+:_blackheads a :Symptom .
+
+:_bladder_discomfort a :Symptom .
+
+:_blister a :Symptom .
+
+:_blood_in_sputum a :Symptom .
+
+:_bloody_stool a :Symptom .
+
+:_blurred_and_distorted_vision a :Symptom .
+
+:_breathlessness a :Symptom .
+
+:_brittle_nails a :Symptom .
+
+:_bruising a :Symptom .
+
+:_burning_micturition a :Symptom .
+
+:_chest_pain a :Symptom .
+
+:_chills a :Symptom .
+
+:_cold_hands_and_feets a :Symptom .
+
+:_coma a :Symptom .
+
+:_congestion a :Symptom .
+
+:_constipation a :Symptom .
+
+:_continuous_feel_of_urine a :Symptom .
+
+:_continuous_sneezing a :Symptom .
+
+:_cough a :Symptom .
+
+:_cramps a :Symptom .
+
+:_dark_urine a :Symptom .
+
+:_dehydration a :Symptom .
+
+:_depression a :Symptom .
+
+:_diarrhoea a :Symptom .
+
+:_dischromic__patches a :Symptom .
+
+:_distention_of_abdomen a :Symptom .
+
+:_dizziness a :Symptom .
+
+:_drying_and_tingling_lips a :Symptom .
+
+:_enlarged_thyroid a :Symptom .
+
+:_excessive_hunger a :Symptom .
+
+:_extra_marital_contacts a :Symptom .
+
+:_family_history a :Symptom .
+
+:_fast_heart_rate a :Symptom .
+
+:_fatigue a :Symptom .
+
+:_fluid_overload a :Symptom .
+
+:_foul_smell_of_urine a :Symptom .
+
+:_headache a :Symptom .
+
+:_high_fever a :Symptom .
+
+:_hip_joint_pain a :Symptom .
+
+:_history_of_alcohol_consumption a :Symptom .
+
+:_increased_appetite a :Symptom .
+
+:_indigestion a :Symptom .
+
+:_inflammatory_nails a :Symptom .
+
+:_internal_itching a :Symptom .
+
+:_irregular_sugar_level a :Symptom .
+
+:_irritability a :Symptom .
+
+:_irritation_in_anus a :Symptom .
+
+:_joint_pain a :Symptom .
+
+:_knee_pain a :Symptom .
+
+:_lack_of_concentration a :Symptom .
+
+:_lethargy a :Symptom .
+
+:_loss_of_appetite a :Symptom .
+
+:_loss_of_balance a :Symptom .
+
+:_loss_of_smell a :Symptom .
+
+:_malaise a :Symptom .
+
+:_mild_fever a :Symptom .
+
+:_mood_swings a :Symptom .
+
+:_movement_stiffness a :Symptom .
+
+:_mucoid_sputum a :Symptom .
+
+:_muscle_pain a :Symptom .
+
+:_muscle_wasting a :Symptom .
+
+:_muscle_weakness a :Symptom .
+
+:_nausea a :Symptom .
+
+:_neck_pain a :Symptom .
+
+:_nodal_skin_eruptions a :Symptom .
+
+:_obesity a :Symptom .
+
+:_pain_behind_the_eyes a :Symptom .
+
+:_pain_during_bowel_movements a :Symptom .
+
+:_pain_in_anal_region a :Symptom .
+
+:_painful_walking a :Symptom .
+
+:_palpitations a :Symptom .
+
+:_passage_of_gases a :Symptom .
+
+:_patches_in_throat a :Symptom .
+
+:_phlegm a :Symptom .
+
+:_polyuria a :Symptom .
+
+:_prominent_veins_on_calf a :Symptom .
+
+:_puffy_face_and_eyes a :Symptom .
+
+:_pus_filled_pimples a :Symptom .
+
+:_receiving_blood_transfusion a :Symptom .
+
+:_receiving_unsterile_injections a :Symptom .
+
+:_red_sore_around_nose a :Symptom .
+
+:_red_spots_over_body a :Symptom .
+
+:_redness_of_eyes a :Symptom .
+
+:_restlessness a :Symptom .
+
+:_runny_nose a :Symptom .
+
+:_rusty_sputum a :Symptom .
+
+:_scurring a :Symptom .
+
+:_shivering a :Symptom .
+
+:_silver_like_dusting a :Symptom .
+
+:_sinus_pressure a :Symptom .
+
+:_skin_peeling a :Symptom .
+
+:_skin_rash a :Symptom .
+
+:_slurred_speech a :Symptom .
+
+:_small_dents_in_nails a :Symptom .
+
+:_spinning_movements a :Symptom .
+
+:_spotting__urination a :Symptom .
+
+:_stiff_neck a :Symptom .
+
+:_stomach_bleeding a :Symptom .
+
+:_stomach_pain a :Symptom .
+
+:_sunken_eyes a :Symptom .
+
+:_sweating a :Symptom .
+
+:_swelled_lymph_nodes a :Symptom .
+
+:_swelling_joints a :Symptom .
+
+:_swelling_of_stomach a :Symptom .
+
+:_swollen_blood_vessels a :Symptom .
+
+:_swollen_extremeties a :Symptom .
+
+:_swollen_legs a :Symptom .
+
+:_throat_irritation a :Symptom .
+
+:_toxic_look_\(typhos\) a :Symptom .
+
+:_ulcers_on_tongue a :Symptom .
+
+:_unsteadiness a :Symptom .
+
+:_visual_disturbances a :Symptom .
+
+:_vomiting a :Symptom .
+
+:_watering_from_eyes a :Symptom .
+
+:_weakness_in_limbs a :Symptom .
+
+:_weakness_of_one_body_side a :Symptom .
+
+:_weight_gain a :Symptom .
+
+:_weight_loss a :Symptom .
+
+:_yellow_crust_ooze a :Symptom .
+
+:_yellow_urine a :Symptom .
+
+:_yellowing_of_eyes a :Symptom .
+
+:_yellowish_skin a :Symptom .
+
 :exhibitsSymptom a owl:ObjectProperty ;
     rdfs:domain :Patient ;
     rdfs:range :Symptom .
@@ -129,6 +391,8 @@
     rdfs:range :Treatment .
 
 :hepatitis_A a :Disease .
+
+:itching a :Symptom .
 
 :receivesTreatment a owl:ObjectProperty ;
     rdfs:domain :Patient ;
@@ -160,9 +424,9 @@
 
 :Patient a owl:Class .
 
-:Symptom a owl:Class .
-
 :Treatment a owl:Class .
 
 :Disease a owl:Class .
+
+:Symptom a owl:Class .
 

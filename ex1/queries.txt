@@ -4,14 +4,21 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX : <http://www.semanticweb.org/avt/ontologies/historia/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
+# ex 1
 select * where {
     ?s a owl:Class.
 }
 
+#ex 2
 select (COUNT(?s) AS ?classCount) where {
     ?s rdf:type owl:ObjectProperty.
 }
 
+#ex 3
 select (COUNT(?s) AS ?classCount) where {
     ?s a owl:NamedIndividual.
 }
+
+#ex 4
+
+#ex 5

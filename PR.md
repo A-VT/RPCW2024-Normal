@@ -3,7 +3,6 @@ Ex. 1
 - partially added the individuals
 - done the first 3/5 queries
 
-
 Ex. 2
 - adicionei ';' nos Patient1 e Patient2 - linhas 66 e 72.
 - criadas as Diseases

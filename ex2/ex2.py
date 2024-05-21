@@ -25,23 +25,20 @@ def get_instances_diseases():
             key, value = items[0], items[1]
 
             if i == 0:
-                val = value.replace(" ", "_")
-                disease_uri = URIRef(f"{nmp}{val}")
+                disease_id = value.replace(" ", "_")
+                disease_uri = URIRef(f"{nmp}{disease_id}")
                 g.add((disease_uri, RDF.type, nmp.Disease))
 
-            #else:
-            #    if value not in symptons.keys():
-            #        symptom_uri = URIRef(f"{nmp}{counter_s}")
-            #        g.add((symptom_uri, RDF.type, nmp.Symptom)) # Literal(value)))
-#
-            #        symptons[key] = symptom_uri
-            #        counter_s+=1
-#
-            #    if value != "":
-            #        s = symptom_uri[key]
-            #        g.add((disease_uri, nmp.hasSymptom, s))
-            
+            else:
 
+                if value not in symptons.keys():
+                    symptom_id = value.replace(" ", "_")
+                    symptom_uri = URIRef(f"{nmp}{symptom_id}")
+                    symptons[key] = symptom_uri
+                else:
+                    symptom_uri = symptons[key]
+
+                g.add((symptom_uri, RDF.type, nmp.Symptom)) # Literal(value)))
 
 def create_descriptions():
     for i, row in enumerate(data):
@@ -64,7 +61,7 @@ data = read_csv_to_dict(file_path)
 get_instances_diseases()
 
 file_path_2 = 'teste/Disease_Description.csv'
-data_descriptions = read_csv_to_dict(file_path_2)
+#data_descriptions = read_csv_to_dict(file_path_2)
 create_descriptions()
 
 write_in_file()
