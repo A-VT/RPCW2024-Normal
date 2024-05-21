@@ -1,0 +1,168 @@
+@prefix : <http://www.example.org/disease-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.example.org/disease-ontology#(vertigo)_Paroymsal__Positional_Vertigo> a :Disease .
+
+:AIDS a :Disease .
+
+:Acne a :Disease .
+
+:Alcoholic_hepatitis a :Disease .
+
+:Allergy a :Disease .
+
+:Arthritis a :Disease .
+
+:Bronchial_Asthma a :Disease .
+
+:Cervical_spondylosis a :Disease .
+
+:Chicken_pox a :Disease .
+
+:Chronic_cholestasis a :Disease .
+
+:Common_Cold a :Disease .
+
+:Dengue a :Disease .
+
+:Diabetes a :Disease ;
+    :hasSymptom :Fatigue,
+        :FrequentUrination,
+        :IncreasedThirst ;
+    :hasTreatment :DietModification,
+        :Exercise,
+        :InsulinTherapy .
+
+:Diabetes_ a :Disease .
+
+:Dimorphic_hemmorhoids\(piles\) a :Disease .
+
+:Drug_Reaction a :Disease .
+
+:Flu a :Disease ;
+    :hasSymptom :Cough,
+        :Fever,
+        :SoreThroat ;
+    :hasTreatment :AntiviralDrugs,
+        :Hydration,
+        :Rest .
+
+:Fungal_infection a :Disease .
+
+:GERD a :Disease .
+
+:Gastroenteritis a :Disease .
+
+:Heart_attack a :Disease .
+
+:Hepatitis_B a :Disease .
+
+:Hepatitis_C a :Disease .
+
+:Hepatitis_D a :Disease .
+
+:Hepatitis_E a :Disease .
+
+:Hypertension_ a :Disease .
+
+:Hyperthyroidism a :Disease .
+
+:Hypoglycemia a :Disease .
+
+:Hypothyroidism a :Disease .
+
+:Impetigo a :Disease .
+
+:Jaundice a :Disease .
+
+:Malaria a :Disease .
+
+:Migraine a :Disease .
+
+:Ontology a owl:Ontology .
+
+:Osteoarthristis a :Disease .
+
+:Paralysis_\(brain_hemorrhage\) a :Disease .
+
+:Patient1 a :Patient ;
+    :exhibitsSymptom :Cough,
+        :Fever,
+        :SoreThroat ;
+    :name "Paul Harrods" .
+
+:Patient2 a :Patient ;
+    :exhibitsSymptom :Fatigue,
+        :FrequentUrination,
+        :IncreasedThirst ;
+    :name "Ana Montana" .
+
+:Peptic_ulcer_diseae a :Disease .
+
+:Pneumonia a :Disease .
+
+:Psoriasis a :Disease .
+
+:Tuberculosis a :Disease .
+
+:Typhoid a :Disease .
+
+:Urinary_tract_infection a :Disease .
+
+:Varicose_veins a :Disease .
+
+:exhibitsSymptom a owl:ObjectProperty ;
+    rdfs:domain :Patient ;
+    rdfs:range :Symptom .
+
+:hasDisease a owl:ObjectProperty ;
+    rdfs:domain :Patient ;
+    rdfs:range :Disease .
+
+:hasSymptom a owl:ObjectProperty ;
+    rdfs:domain :Disease ;
+    rdfs:range :Symptom .
+
+:hasTreatment a owl:ObjectProperty ;
+    rdfs:domain :Disease ;
+    rdfs:range :Treatment .
+
+:hepatitis_A a :Disease .
+
+:receivesTreatment a owl:ObjectProperty ;
+    rdfs:domain :Patient ;
+    rdfs:range :Treatment .
+
+:AntiviralDrugs a :Treatment .
+
+:DietModification a :Treatment .
+
+:Exercise a :Treatment .
+
+:Hydration a :Treatment .
+
+:InsulinTherapy a :Treatment .
+
+:Rest a :Treatment .
+
+:Cough a :Symptom .
+
+:Fatigue a :Symptom .
+
+:Fever a :Symptom .
+
+:FrequentUrination a :Symptom .
+
+:IncreasedThirst a :Symptom .
+
+:SoreThroat a :Symptom .
+
+:Patient a owl:Class .
+
+:Symptom a owl:Class .
+
+:Treatment a owl:Class .
+
+:Disease a owl:Class .
+
